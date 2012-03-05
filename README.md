@@ -36,20 +36,23 @@ You need to get the url from Google Spreadsheet you want to load, as below.
 
 ### Methods
 
-getData() : Array
-: Get all the data as array.
+#### getData() : Array
+
+Get all the data as array.
 
 	// example
 	var myData = loader.getData();
 
-getItem( condition ) : Array
-: Get items whitch match the condition passed as object.
+#### getItem( condition ) : Array
+
+Get items whitch match the condition passed as object.
 
 	// example
 	var myItems = loader.getItem({ type : "drink", price : 500 });
 
-each(callback) : SpreadSheetLoader
-: Wrapper of jQuery.fn.each
+#### each(callback) : SpreadSheetLoader
+
+Wrapper of jQuery.fn.each
 
 	// example
 	loader.each(function(i, item){
